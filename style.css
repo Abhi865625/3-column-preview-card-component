@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+:root {
+  --Primary-Color1: hsl(31, 77%, 52%);
+  --Primary-Color2: hsl(184, 100%, 22%);
+  --Primary-Color3: hsl(179, 100%, 13%);
+  --Secondary-Color1: hsla(0, 0%, 100%, 0.75);
+  --Secondary-Color2: hsl(0, 0%, 95%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--Secondary-Color2);
+}
+.main {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+}
+
+.card-container {
+  background-color: var(--Secondary-Color1);
+  color: var(--Secondary-Color2);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  max-width: 910px;
+}
+
+.card {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding: 2.8rem;
+}
+.card h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.card p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--Secondary-Color1);
+}
+
+.card a {
+  border: 2px solid var(--Secondary-Color2);
+  padding: 1em 2em;
+  border-radius: 2em;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.sedans {
+  background-color: var(--Primary-Color1);
+}
+.sedans a {
+  color: var(--Primary-Color1);
+}
+
+.suvs {
+  background-color: var(--Primary-Color2);
+}
+
+.suvs a {
+  color: var(--Primary-Color2);
+}
+
+.luxury {
+  background-color: var(--Primary-Color3);
+}
+
+.luxury a {
+  color: var(--Primary-Color3);
+}
+
+@media (max-width: 768px) {
+  .card a {
+    margin-top: 1rem;
+  }
+
+  .main {
+    position: static;
+  }
+
+  .card:last-child {
+    margin-bottom: 4rem;
+    border-radius: 0 0 10px 10px;
+  }
+  .card-container {
+    margin: 1rem;
+    margin-top: 4rem;
+    display: inline-block;
+  }
+}
