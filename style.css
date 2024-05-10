@@ -21,13 +21,13 @@ a {
   background-color: var(--Secondary-Color2);
 }
 .main {
+  background-color: var(--Secondary-Color1);
   position: absolute;
   top: 12%;
   left: 20%;
 }
 
 .card-container {
-  background-color: var(--Secondary-Color1);
   color: var(--Secondary-Color2);
   border-radius: 10px;
   overflow: hidden;
