@@ -22,7 +22,7 @@ a {
 }
 .main {
   height: 100vh;
-  background-color: var(--Secondary-Color1);
+  background-color: var(--Secondary-Color2);
   display: flex;
   align-items: center;
   justify-content: center;
